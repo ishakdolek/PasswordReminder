@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PasswordReminder.View.Login"
+             BackgroundColor="#349ad9">
+    <ContentPage.ToolbarItems>
+        <!--<ToolbarItem Text="Sign Up" Clicked="OnSignUpButtonClicked" />-->
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand" Padding="10,20,10,0">
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Image Source="password.png"/>
+            </StackLayout>
+            <StackLayout Padding="10">
+            <Entry x:Name="Username"  Style="{StaticResource EntryStyle}" Placeholder="Username" />
+            <Entry x:Name="Password" IsPassword="true" Style="{StaticResource EntryStyle}" Placeholder="Password"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Button Text="Login" Style="{StaticResource  ButtonStyle}" Clicked="OnLoginButtonClicked" />
+                <Button Text="Register" Style="{StaticResource  ButtonStyle}" Clicked="Register"/>
+             </StackLayout>
+            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="End">
+                <Button Text="Forget Password" Clicked="ReminderPassword"/>
+            </StackLayout>
+            <Label x:Name="Message" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

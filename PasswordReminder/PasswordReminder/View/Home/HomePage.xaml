@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             x:Class="PasswordReminder.View.Home.HomePage"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem>
+            <!--<ToolbarItem Icon="plus.png" Clicked="AddNewWebsite" Order="Primary"></ToolbarItem>-->
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <controls:FlowListView x:Name="ListPersonSiteInformation" FlowItemTapped="ListPersonSiteInformation_OnFlowItemTapped" FlowColumnCount="3" SeparatorVisibility="None" HasUnevenRows="true"
+		 FlowColumnMinWidth="110"  FlowItemsSource="{Binding .}">
+            <controls:FlowListView.FlowColumnTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Padding="0" x:Name="IsStackLayout">
+                            <Label x:Name="lblWebName" HorizontalOptions="Fill" HorizontalTextAlignment="Center" VerticalOptions="End"
+							BackgroundColor="Silver" Opacity="0.5" Text="{Binding WebName}"/>
+                            <ffimageloading:CachedImage HeightRequest="150"   Aspect="AspectFill"
+							DownsampleHeight="100" DownsampleUseDipUnits="false" 
+							LoadingPlaceholder="image_loading.png" ErrorPlaceholder="image_error.png"
+							Source="pass.png"/>
+                            <Label x:Name="Label" HorizontalOptions="Fill" HorizontalTextAlignment="Center" VerticalOptions="End"
+							BackgroundColor="Silver" Opacity="0.5" Text="{Binding Url}"/>
+                        </StackLayout>
+                    </Grid>
+                </DataTemplate>
+            </controls:FlowListView.FlowColumnTemplate>
+
+        </controls:FlowListView>
+    </ContentPage.Content>
+</ContentPage>

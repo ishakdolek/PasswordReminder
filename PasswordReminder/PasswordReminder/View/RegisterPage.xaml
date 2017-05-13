@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PasswordReminder.View.RegisterPage"
+             Title="Register Page">
+    <ContentPage.Content>
+   <StackLayout Padding="10,10,10,0">
+       <Label Text="Create Account"/>
+            <Entry x:Name="Username" Placeholder="Entry Username"/>
+            <Entry x:Name="Password" IsPassword="True" Placeholder="Entry Password"/>
+            <Label Text="Reminder for Local Username information"/>
+            <Entry x:Name="Email" Keyboard="Email" Placeholder="Entry Email"/>
+            <Label Text="Reminder for local password"/>
+            <Entry x:Name="ValidatedCode" Keyboard="Numeric" IsPassword="True"  Placeholder="Validate Code"></Entry>
+             <StackLayout>
+                <Button Text="Register" Style="{StaticResource ButtonStyle}" HorizontalOptions="CenterAndExpand" Clicked="Create" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

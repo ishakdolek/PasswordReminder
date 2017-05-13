@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PasswordReminder.View.Home.HomePageDetail">
+    <StackLayout  Orientation="Vertical" Padding="10,10,10,0">
+        <Entry x:Name="UrlEntry" Placeholder="Website Url" />
+        <Entry x:Name="Username"  Placeholder="Username"/>
+        <Entry x:Name="Email" Placeholder="Email" />
+        <Entry x:Name="Phone" Placeholder="Phone" />
+        <Entry x:Name="Password" Placeholder="Password" IsPassword="True" />
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Göster" Style="{StaticResource ButtonStyle}" Clicked="ShowMyPasswordWithId"></Button>
+                <Button Text="Sil" Style="{StaticResource ButtonStyle}" Clicked="DeleteSite"/>
+            </StackLayout>
+        </StackLayout>
+      </StackLayout>
+</ContentPage>

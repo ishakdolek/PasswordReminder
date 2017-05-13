@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PasswordReminder.View.Home.DetailPage"
+             Title="New Website Account Information">
+    <ContentPage.Content>
+        <StackLayout Padding="10,5,10,10" Orientation="Vertical">
+            <Entry Placeholder="Website Name" x:Name="WebName"></Entry>
+            <Entry Placeholder="Website Url" Keyboard="Url" x:Name="Url"></Entry>
+            <Entry Placeholder="Username" x:Name="Username"></Entry>
+            <Entry Placeholder="Email" Keyboard="Email" x:Name="Email"></Entry>
+            <Entry Placeholder="Password" x:Name="Password" IsPassword="True"></Entry>
+            <Entry Placeholder="Phone" Keyboard="Telephone" x:Name="Phone"></Entry>
+            <Picker x:Name="ColorPicker"/>
+            <!--<Entry Placeholder="Select Icon" x:Name="SelectIcon"></Entry>-->
+          <Button Text="Save" Clicked="Button_OnClicked"></Button>
+         </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

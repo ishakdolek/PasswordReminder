@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PasswordReminder.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="BorderColor" Value="#3B733B" />
+                <Setter Property="BorderRadius" Value="5" />
+                <Setter Property="BorderWidth" Value="5" />
+                <Setter Property="WidthRequest" Value="200" />
+                <Setter Property="TextColor" Value="#F5FAFA" />
+                <Setter Property="BackgroundColor" Value="#175417"></Setter>
+            </Style>
+
+            <Style x:Key="EntryStyle" TargetType="Button">
+                <Setter Property="BorderColor" Value="#3B733B" />
+                <Setter Property="BorderRadius" Value="10" />
+                <Setter Property="BorderWidth" Value="10" />
+                <Setter Property="TextColor" Value="#000000" />
+                <Setter Property="BackgroundColor" Value="#FFFFFF"></Setter>
+            </Style>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
