@@ -22,6 +22,11 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <StackLayout Padding="0" x:Name="IsStackLayout">
+                            <StackLayout.BackgroundColor>
+                                <Color>
+                                    <OnPlatform x:TypeArguments="Color" Android="#51C0D4" WinPhone="#51C0D4" iOS="#51C0D4"></OnPlatform>
+                                </Color>
+                            </StackLayout.BackgroundColor>
                             <Label x:Name="lblWebName" HorizontalOptions="Fill" HorizontalTextAlignment="Center" VerticalOptions="End"
 							BackgroundColor="Silver" Opacity="0.5" Text="{Binding WebName}"/>
                             <ffimageloading:CachedImage HeightRequest="150"   Aspect="AspectFill"

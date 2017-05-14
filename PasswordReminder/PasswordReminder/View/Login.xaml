@@ -20,7 +20,7 @@
                 <Button Text="Register" Style="{StaticResource  ButtonStyle}" Clicked="Register"/>
              </StackLayout>
             <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="End">
-                <Button Text="Forget Password" Clicked="ReminderPassword"/>
+                <!--<Button Text="Forget Password" Clicked="ReminderPassword"/>-->
             </StackLayout>
             <Label x:Name="Message" />
         </StackLayout>

@@ -22,6 +22,14 @@
                 <Setter Property="TextColor" Value="#000000" />
                 <Setter Property="BackgroundColor" Value="#FFFFFF"></Setter>
             </Style>
+
+
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#FFFFFF" />
+                <Setter Property="FontSize" Value="14"></Setter>
+            </Style>
+
+
         </ResourceDictionary>
 
     </Application.Resources>

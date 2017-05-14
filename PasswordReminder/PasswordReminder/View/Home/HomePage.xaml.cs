@@ -2,6 +2,7 @@
 using System.Linq;
 using PasswordReminder.Controller;
 using PasswordReminder.Model;
+using PasswordReminder.View.Settings;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -54,6 +55,7 @@ namespace PasswordReminder.View.Home
             {
                 Text = "Settings",
                 Order = ToolbarItemOrder.Secondary,
+                Command = new Command(UpdateProfilInformation)
             });
 
             dataLayerManager = new DataLayerManager();
@@ -63,6 +65,11 @@ namespace PasswordReminder.View.Home
             //{
             //    ListPersonSiteInformation.BackgroundColor = _nameToColor.FirstOrDefault(x => x.Key == item.BackgroundColorSite).Value;
             //}
+        }
+
+        private  void UpdateProfilInformation(object obj)
+        {
+            Navigation.PushAsync(new UpdatePersonPage(_person));
         }
 
         private void AddNewWebsite(object obj)

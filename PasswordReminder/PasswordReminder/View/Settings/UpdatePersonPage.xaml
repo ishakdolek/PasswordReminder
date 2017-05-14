@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PasswordReminder.View.Settings.UpdatePersonPage"
+             Title="Update Section">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" Padding="10">
+                <StackLayout Orientation="Vertical" BackgroundColor="#284b5c" Padding="10">
+                    <Label Text="Update Username and Email" Style="{StaticResource LabelStyle}" />
+                    <Entry x:Name="Username" Placeholder="Username"/>
+                    <Entry x:Name="Email" Placeholder="Email" Keyboard="Email"/>
+                    <Button Text="Update" Clicked="UpdateUsernameAndEmail"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Padding="10" BackgroundColor="#284b5c">
+                    <Label Text="Update Password" Style="{StaticResource LabelStyle}" />
+                    <Entry x:Name="Password" Placeholder="Password" IsPassword="True"/>
+                    <Entry x:Name="NewPassword" Placeholder="New Password" IsPassword="True"/>
+                    <Entry x:Name="NewPasswordAgain" Placeholder="New Password Again" IsPassword="True">
+                   
+                    </Entry>
+                    <Button Text="Change Password" Clicked="ChangePassword"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Padding="10" BackgroundColor="#284b5c">
+                    <Label Text="Update Validate Code" Style="{StaticResource LabelStyle}" />
+                    <Entry x:Name="ValidatCode" Placeholder="Validate Code" IsPassword="True"/>
+                    <Entry x:Name="NewValidateCode" Placeholder="New Validate Code" IsPassword="True"/>
+                    <Entry x:Name="NewValidateCodeAgain" Placeholder="New Validate Code Again" IsPassword="True"/>
+                    <Button Text="Change Validate Codes" Clicked="ChangeValidateCode"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+ 
+</ContentPage>
