@@ -14,7 +14,6 @@
                 <Setter Property="TextColor" Value="#F5FAFA" />
                 <Setter Property="BackgroundColor" Value="#175417"></Setter>
             </Style>
-
             <Style x:Key="EntryStyle" TargetType="Button">
                 <Setter Property="BorderColor" Value="#3B733B" />
                 <Setter Property="BorderRadius" Value="10" />
@@ -26,9 +25,6 @@
                 <Setter Property="TextColor" Value="#FFFFFF" />
                 <Setter Property="FontSize" Value="14"></Setter>
             </Style>
-
-
         </ResourceDictionary>
-
     </Application.Resources>
 </Application>

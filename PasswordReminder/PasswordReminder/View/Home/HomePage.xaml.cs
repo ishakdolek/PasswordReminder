@@ -36,7 +36,7 @@ namespace PasswordReminder.View.Home
             _person = person;
             InitializeComponent();
             Title = "Password Reminder";
-            Icon = "icon.png";
+            Icon = "appIcon.png";
 
             ToolbarItems.Add(new ToolbarItem
             {
